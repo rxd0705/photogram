@@ -35,6 +35,6 @@ spring:
     user:
       name: test
       password: 1234
-#
-#file:
-#  path: C:/Users/Administrator/IdeaProjects/photogram/upload
+
+file:
+  path: C:/Users/Administrator/IdeaProjects/upload/

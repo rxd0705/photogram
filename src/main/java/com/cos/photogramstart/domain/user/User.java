@@ -2,10 +2,13 @@ package com.cos.photogramstart.domain.user;
 
 // JPA - Java Persistence API(자바로 데이터를 영구적을 저장(DB)할 수 있는 API를 제공)
 
+import com.cos.photogramstart.domain.user.image.Image;
 import lombok.*;
 
 import javax.persistence.*;
+import java.awt.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Builder
 @AllArgsConstructor
@@ -32,6 +35,9 @@ public class User {
 
     private String profileImageUrl; // 사진
     private String role; // 권한
+
+    @OneToMany(mappedBy = "user",fetch = FetchType.EAGER)
+    private List<Image> images; // 양방향 매핑
 
     private LocalDateTime createDate;
 
