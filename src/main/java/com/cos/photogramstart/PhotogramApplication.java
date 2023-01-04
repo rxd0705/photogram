@@ -10,4 +10,5 @@ public class PhotogramApplication {
         SpringApplication.run(PhotogramApplication.class, args);
     }
 
+
 }
