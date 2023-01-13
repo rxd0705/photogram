@@ -64,4 +64,9 @@ public class ImageService {
 
 //        System.out.println(imageEntity);
     }
+
+    @Transactional(readOnly = true)
+    public List<Image> 인기사진() {
+        return imageRepository.mPopular();
+    }
 }
