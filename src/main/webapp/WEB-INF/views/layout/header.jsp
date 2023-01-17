@@ -3,7 +3,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <sec:authorize access="isAuthenticated()">
-<sec:authentication property="principal" var="principal"/>
+    <sec:authentication property="principal" var="principal"/>
 </sec:authorize>
 
 <!DOCTYPE html>
@@ -33,6 +33,8 @@
 </head>
 
 <body>
+
+<input type="hidden" id="principalId" value="${principal.user.id}"/>
 
 <header class="header">
     <div class="container">

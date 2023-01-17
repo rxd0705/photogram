@@ -1,4 +1,4 @@
-package com.cos.photogramstart.web;
+package com.cos.photogramstart.web.api;
 
 import com.cos.photogramstart.config.auth.PrincipalDetails;
 import com.cos.photogramstart.service.SubscribeService;
